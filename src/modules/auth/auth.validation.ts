@@ -22,6 +22,10 @@ const singUpValidation = z.object({
             })
             .default('USER')
             .optional(),
+        mobileNumber: z.string({
+            required_error: "Phone Number is required",
+            invalid_type_error: "Phone Number must be a string"
+        })
 
     })
 })

@@ -3,4 +3,5 @@ export interface TUser {
     email: string;
     password: string;
     mobileNumber?: string;
+    role: "USER" | "ADMIN"
 }
