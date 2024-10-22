@@ -14,6 +14,7 @@ app.use(cors(
     credentials: true,
   }
 ));
+// route call
 app.use('/api/v1', Routers);
 //Testing
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
