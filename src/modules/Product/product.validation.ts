@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const productValidation = z.object({
+const createProductValidation = z.object({
     body: z.object({
         name: z.string({
             required_error: 'Product name is required',
@@ -32,4 +32,4 @@ const productValidation = z.object({
     })
 });
 
-export const ProductValidation = { productValidation };
+export const ProductValidation = { createProductValidation };
