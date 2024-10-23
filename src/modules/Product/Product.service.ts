@@ -10,6 +10,12 @@ const createProduct = async (payload: TProduct) => {
     })
     return Product
 }
+
+const getAllProducts = async () => {
+    const result = await ProductsModel.find()
+    return result
+}
 export const productService = {
-    createProduct
+    createProduct,
+    getAllProducts
 }

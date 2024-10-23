@@ -6,5 +6,6 @@ import { productController } from "./product.controller";
 const route = Router()
 // create routes
 route.post("/create", validateRequest(ProductValidation.createProductValidation), productController.createProductIntoDB)
+route.get("/", productController.getAllProductsFromDB)
 
 export const productRoutes = route
